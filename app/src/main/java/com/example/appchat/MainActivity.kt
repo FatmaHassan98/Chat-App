@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var email : EditText
     lateinit var password : EditText
     lateinit var sign_up : Button
+    lateinit var sign_in : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         email = findViewById(R.id.email)
         password = findViewById(R.id.password)
         sign_up = findViewById(R.id.sign)
+        sign_in =findViewById(R.id.signin)
 
         val user = name.text
         val mail = email.text
@@ -36,6 +39,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 Toast.makeText(this,"Hello $user" ,Toast.LENGTH_SHORT).show()
             }
+        }
+
+        sign_in.setOnClickListener {
+            val intent = Intent (this,MainActivity3::class.java)
+            startActivity(intent)
+            Toast.makeText(this,"Sign In Now",Toast.LENGTH_SHORT).show()
         }
 
 

@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Chat App</string>
-    <string name="sign_in">Aleady you have an account ?</string>
+    <string name="sign_in">Aleardy you have an account ?</string>
     <string name="email">  Email</string>
     <string name="name">  User Name</string>
     <string name="password">  Password</string>
     <string name="app">Chat App</string>
     <string name="sign">Sign Up</string>
     <string name="activity">Hello in the activity 2</string>
+    <string name="signin">Sign In</string>
 </resources>
